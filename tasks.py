@@ -52,4 +52,62 @@ def is_prime(a):
 
     return True
 
-print(is_prime(37))
+# print(is_prime(37))
+
+
+# def apple(pupils, apples):
+#     a_for_p = 0
+#     a_in_b = 0
+#
+#     return a_for_p, a_in_b
+
+
+def XOR_cipher(data, key):
+    # from itertools import izip, cycle
+    import base64
+
+    print(base64.encodestring(data).strip())
+
+
+# XOR_cipher('hypercube', '1')
+
+
+# XOR для шифрования/расшифровки
+def xor_cipher(str, key):
+    encript_str = ""
+    i = 0
+    for letter in str:
+        i += 10
+        encript_str += chr(ord(letter) ^ (key+i))
+    return encript_str
+
+
+# strg = "грузите апельсины бочками"
+# key = 0
+# key_2 = 1
+# print("original:\t", strg)
+# encr_strg = xor_cipher(strg, key)
+# print("encript:\t", encr_strg)
+# print("decript:\t", xor_cipher(encr_strg, key))
+
+
+# str = 'Abrakadabra'
+#
+# print(str[2])
+# print(str[-2])
+# print(str[0:5])
+# print(str[0:-2])
+# print(str[1::2])
+# print(str[::-1])
+
+
+# str = 'asdf jkl; asdf f'
+#
+# print(str.count(' ') + 1)
+
+
+s = 'HyperCube'
+
+print(s[(len(s)+1)//2:]+s[:(len(s)+1)//2])
+
+# dabraAbraka
